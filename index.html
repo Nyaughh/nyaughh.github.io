@@ -1,99 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Pink and Black Website</title>
-    <style>
-      body {
-        background-color: black;
-        color: pink;
-        font-family: Arial, sans-serif;
-      }
-
-      header {
-        background-color: pink;
-        padding: 20px;
-        text-align: center;
-        font-size: 2em;
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-between;
-        background-color: pink;
-        padding: 10px;
-      }
-
-      nav a {
-        color: black;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px;
-        transition: all 0.3s ease-in-out;
-      }
-
-      nav a:hover {
-        background-color: black;
-        color: pink;
-      }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-      }
-
-      section {
-        margin: 20px;
-        text-align: center;
-      }
-
-      section h2 {
-        font-size: 1.5em;
-        margin: 10px;
-      }
-
-      section p {
-        font-size: 1.2em;
-        margin: 10px;
-      }
-
-      footer {
-        background-color: pink;
-        text-align: center;
-        padding: 20px;
-        font-size: 0.8em;
-      }
-    </style>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tictactoe.js"></script>
   </head>
   <body>
-    <header>
-        <header>
-            <img src="logo.png" width="300" alt="My Website">
-        </header>
-      <h1>Welcome to My Pink and Black Website</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-      <section>
-        <h2>Welcome to My Website</h2>
-		<p>We are a company that specializes in providing high-quality products and services to our customers. Our team of experts is dedicated to meeting the needs of our clients and ensuring their satisfaction.</p>
-		<section>
-			<img src="product1.jpg" alt="Product 1">
-			<img src="product2.jpg" alt="Product 2">
-			<img src="product3.jpg" alt="Product 3">
-      </section>
-      <section>
-        <h2>Section 2</h2>
-        <p>Maecenas vel leo ut turpis bibendum dignissim ac nec nisl. Vestibulum convallis, metus id congue gravida, lectus sapien ultricies nunc, eget lacinia massa orci in libero.</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2023 My Pink and Black Website</p>
-    </footer>
+    <div class="game-board">
+      <div class="cell" id="cell0"></div>
+      <div class="cell" id="cell1"></div>
+      <div class="cell" id="cell2"></div>
+      <div class="cell" id="cell3"></div>
+      <div class="cell" id="cell4"></div>
+      <div class="cell" id="cell5"></div>
+      <div class="cell" id="cell6"></div>
+      <div class="cell" id="cell7"></div>
+      <div class="cell" id="cell8"></div>
+    </div>
+    <div class="message" id="messageDisplay"></div>
+   
+    <script src="script.js"></script>
+
   </body>
 </html>
