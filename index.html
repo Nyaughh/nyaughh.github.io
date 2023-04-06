@@ -63,24 +63,27 @@
       }
     </style>
   </head>
-  <body>
+  <body onclick="playAudio()">
     <div class="container">
       <header class="header">
         <h1>Happy Birthday!</h1>
       </header>
       <img src="https://pbs.twimg.com/media/FDCiObUWYAUOHaf?format=jpg&name=900x900" alt="Happy Birthday" />
+      
       <div class="message">
         <p>Dear Alen,</p>
         <p>Wishing you a very happy birthday! I hope this year brings you all the joy and love you deserve.</p>
         <p>Thank you for being such an amazing friend.</p>
       </div>
-      <div class="from">
-        <p>With love,</p>
-        <p>Nyaughh</p>
-
-      </div>
-      <audio autoplay loop source src="spotifydown.com - 2m6jds9zw9x5bgNXZrN4yg.mp3" type="audio/mpeg"> </audio> 
       
+      <audio id="myAudio" source src="spotifydown.com - 2m6jds9zw9x5bgNXZrN4yg.mp3" type="audio/mpeg"></audio>
+
+      <script>
+        function playAudio() {
+          var audio = document.getElementById("myAudio");
+          audio.play();
+        }
+      </script>
     </div>
   </body>
 </html>
