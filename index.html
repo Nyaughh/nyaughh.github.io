@@ -78,27 +78,8 @@
         <p>With love,</p>
         <p>Nyaughh</p>
       </div>
-      <button id="togglePlay">Toggle Play</button>
+      <audio autoplay loop source src="spotifydown.com - 2m6jds9zw9x5bgNXZrN4yg.mp3" type="audio/mpeg"></audio> 
+      
     </div>
-
-    <script src="https://sdk.scdn.co/spotify-player.js"></script>
-    <script>
-        window.onSpotifyWebPlaybackSDKReady = () => {
-            const token = 'BQDfHNCzk2b5CkCLUMlk4-6VS2Kp29C2Yq2JuR93_kckVQcBf-1pBO4C9znqRXKlj7VRoUxuZd4j5QN6Uvr8KiaAsR_ft5A_G_Ja0MacwlMMEObTg0r_P4f9SE3XTXMYX_S-USdFRp5LqcwiJgIB3ShbPQqtylCOiaeEKoWjyYpoOXJ-MQStCtfUaum3hVHvQyoTUoiGlF6nUnhOS-3UkAZEDAkVA-EzP-ELtzLhe62IP9VOjB2tEaV8D-HgfAepNpbK9m1cy2YzJvnBZV4nmnYToQrlp1i3UK7T2R8q3wFJ_PUpddrDy7Pa-OwPm_F1aRcuX9lsKDg_SrzoCoUsyNq0Gs3YDAa1s_I9-sYA2l0';
-            const player = new Spotify.Player({
-                name: 'Web Playback SDK Quick Start Player',
-                getOAuthToken: cb => { cb(token); },
-                volume: 0.5
-            });
-
-            // Ready
-            player.addListener('ready', ({ device_id }) => {
-                console.log('Ready with Device ID', device_id);
-            });
-
-            // Not Ready
-            player.addListener('not_ready', ({ device_id }) => {
-                console.log('Device ID has gone offline', device_id);
-            });
-
-            player.addListener('initialization_error', ({ message }) => {
+  </body>
+</html>
