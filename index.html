@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="tictactoe.js"></script>
+    <title>Happy Birthday!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #e0ca9b;
+      }
+      
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      
+      .header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      
+      h1 {
+        font-size: 3rem;
+        color: #6c3c15;
+        margin-bottom: 20px;
+        font-family: 'Lobster', cursive;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .message {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.5rem;
+        line-height: 2;
+      }
+      
+      .from {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    </style>
   </head>
   <body>
-    <div class="game-board">
-      <div class="cell" id="cell0"></div>
-      <div class="cell" id="cell1"></div>
-      <div class="cell" id="cell2"></div>
-      <div class="cell" id="cell3"></div>
-      <div class="cell" id="cell4"></div>
-      <div class="cell" id="cell5"></div>
-      <div class="cell" id="cell6"></div>
-      <div class="cell" id="cell7"></div>
-      <div class="cell" id="cell8"></div>
+    <div class="container">
+      <header class="header">
+        <h1>Happy Birthday!</h1>
+      </header>
+      <img src="https://pbs.twimg.com/media/FDCiObUWYAUOHaf?format=jpg&name=900x900" alt="Happy Birthday" />
+      <div class="message">
+        <p>Dear Alen,</p>
+        <p>Wishing you a very happy birthday! I hope this year brings you all the joy and love you deserve.</p>
+        <p>Thank you for being such an amazing friend.</p>
+      </div>
+      <div class="from">
+        <p>With love,</p>
+        <p>Nyaughh</p>
+      </div>
+      <audio src="https://open.spotify.com/track/2m6jds9zw9x5bgNXZrN4yg?si=2047dc9c61454696" controls></audio>
+      </audio>
     </div>
-    <div class="message" id="messageDisplay"></div>
-   
-    <script src="script.js"></script>
-
   </body>
 </html>
