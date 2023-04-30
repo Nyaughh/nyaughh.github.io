@@ -21,6 +21,7 @@
         max-width: 960px;
         margin: 0 auto;
         padding: 30px;
+        position: relative;
       }
       
       .header {
@@ -61,6 +62,17 @@
         text-transform: uppercase;
         letter-spacing: 2px;
       }
+
+      .play-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        background-image: url('play.png');
+        background-size: cover;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body onclick="playAudio()">
@@ -68,6 +80,7 @@
       <header class="header">
         <h1>Happy Birthday!</h1>
       </header>
+      <div class="play-icon"></div>
       <img src="https://pbs.twimg.com/media/FDCiObUWYAUOHaf?format=jpg&name=900x900" alt="Happy Birthday" />
       
       <div class="message">
