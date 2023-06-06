@@ -5,78 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      
-      body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #e0ca9b;
-      }
-      
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 30px;
-        position: relative;
-      }
-      
-      .header {
-        text-align: center;
-        margin-bottom: 50px;
-      }
-      
-      h1 {
-        font-size: 3rem;
-        color: #6c3c15;
-        margin-bottom: 20px;
-        font-family: 'Lobster', cursive;
-      }
-      
-      img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      }
-      
-      .message {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 1.5rem;
-        line-height: 2;
-      }
-      
-      .from {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-
-      .play-icon {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        margin-top: -15px;
-        margin-left: 12px;
-        width: 40px;
-        height: 40px;
-        background-image: url('play.png');
-        background-size: cover;
-        cursor: pointer;
-}
-
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body onclick="playAudio()">
     <div class="container">
@@ -84,10 +13,10 @@
         <h1>Happy Birthday!</h1>
       </header>
       <div class="play-icon"></div>
-      <img src="https://pbs.twimg.com/media/FDCiObUWYAUOHaf?format=jpg&name=900x900" alt="Happy Birthday" />
+      <img src="ae3de88df0dbf90202b5e9eb7960181f.jpg" alt="Happy Birthday" />
       
       <div class="message">
-        <p>Dear Alen,</p>
+        <p>Dear Ryuu,</p>
         <p>Wishing you a very happy birthday! I hope this year brings you all the joy and love you deserve.</p>
         <p>Thank you for being such an amazing friend.</p>
       </div>
@@ -95,7 +24,7 @@
         <p>With love,</p>
         <p>Nyaughh</p></div>
 
-      <audio id="myAudio" source src="spotifydown.com - 2m6jds9zw9x5bgNXZrN4yg.mp3" type="audio/mpeg"></audio>
+      <audio loop id="myAudio" source src="spotifydown.com - Sorokyanpu no susume.mp3" type="audio/mpeg"></audio>
 
       <script>
         function playAudio() {
